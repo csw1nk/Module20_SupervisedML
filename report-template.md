@@ -1,27 +1,21 @@
-# Module 12 Report Template
+# Module 12 Report
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any other algorithms).
+* The purpose of the analysis is to predict the risk of loan default based on financial characteristics.
+* The data focused on financial metrics such as loan size, interest rate, borrower income, and others, aiming to predict loan status as either healthy (0) or high-risk (1).
+* The variable 'loan_status' had 18,759 healthy loans and 625 high-risk loans.
+* The machine learning process included data loading, splitting into training and testing sets, model fitting, and performance evaluation.
+* Methods used include LogisticRegression to build the predictive model and performance metrics like confusion matrix and classification report to evaluate it.
 
 ## Results
 
-Using bulleted lists, describe the accuracy scores and the precision and recall scores of all machine learning models.
-
 * Machine Learning Model 1:
-    * Description of Model 1 Accuracy, Precision, and Recall scores.
+Accuracy: 100% — The model correctly predicted all instances in the test set.
+Precision: 100% — The model perfectly predicted both healthy loans (0) and high-risk loans (1) without any false positives.
+Recall: 100% — The model successfully identified all actual positives for both categories without any false negatives..
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
+Based on the results, Logistic Regression is recommended as it performs exceptionally well for classification problems like this, where both predicting 0s (healthy loans) and 1s (high-risk loans) are equally important for maintaining financial stability and minimizing risk.
 
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
